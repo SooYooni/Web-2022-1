@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<h1 align="center">게시판</h1>
+		
+		<form action="Board_insertPro.jsp" method="post">
+		<div class="container">
+			<div class="form-group">
+      		<label for="name">닉네임</label>
+      		<input type="text" class="form-control" id="name" name="name">
+    	</div>
+    
+    	<div class="form-group">
+   				<label for="content">내용</label>
+   				<textarea class="form-control" rows="4" id="content" name="content"></textarea>
+ 			</div>
+ 		
+ 			<div class="form-group">
+				<input type="submit" value="다음">
+			</div>
+</div>
+		</form>
+
+</body>
+</html>
